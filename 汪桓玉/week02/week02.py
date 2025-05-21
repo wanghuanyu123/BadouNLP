@@ -122,7 +122,7 @@ def main():
     current_dir = os.path.dirname(os.path.abspath(__file__))
     # 构建保存路径
     save_path = os.path.join(current_dir, 'week02model.bin')
-    # 保存模型
+    # 保存模型``
     torch.save(model.state_dict(),save_path)
     # 画图
     print(log)
