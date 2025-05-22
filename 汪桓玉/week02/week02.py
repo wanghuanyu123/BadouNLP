@@ -30,6 +30,7 @@ class TorchModel(nn.Module):
             return self.loss(y_pred,y)
         else:
             y_pred = self.softmax(y_pred)
+            print('y',y_pred)
             return y_pred
 
 def build_sanple():
